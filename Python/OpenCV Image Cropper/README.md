@@ -39,16 +39,16 @@ I want the terminal to print as an output for every image that is successfully s
 This is how my images are stored:
 
 
-htootayzaaung@MSI:~/Desktop/Drinks_Classifier$ ls
- data_annotation.py         gather_data.py          print.py
- data_augmentation.py   image_cropper          'Utility commands.txt'
- data_pipeline.py           image_cropper.cpp
- draw_rectangles.py         Images
-htootayzaaung@MSI:~/Desktop/Drinks_Classifier$ cd Images/
-htootayzaaung@MSI:~/Desktop/Drinks_Classifier/Images$ ls
-carlsberg_beer_images  heineken_beer_images  red_bull_energy_drink_images
-coca_cola_images           pepsi_images              tiger_beer_images
-htootayzaaung@MSI:~/Desktop/Drinks_Classifier/Images$
+htootayzaaung@MSI:~/Desktop/Drinks_Classifier$ ls <br>
+ data_annotation.py         gather_data.py          print.py <br>
+ data_augmentation.py   image_cropper          'Utility commands.txt' <br>
+ data_pipeline.py           image_cropper.cpp <br>
+ draw_rectangles.py         Images <br>
+htootayzaaung@MSI:~/Desktop/Drinks_Classifier$ cd Images/ <br>
+htootayzaaung@MSI:~/Desktop/Drinks_Classifier/Images$ ls <br>
+carlsberg_beer_images  heineken_beer_images  red_bull_energy_drink_images <br>
+coca_cola_images           pepsi_images              tiger_beer_images <br>
+htootayzaaung@MSI:~/Desktop/Drinks_Classifier/Images$ <br>
 
 
 The images read needs to be overwritten in the same location with the images that were read without creating new folders to save cropped images.
