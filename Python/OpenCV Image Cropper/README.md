@@ -2,32 +2,6 @@
 
 A utility for cropping and managing images for the Drinks Classifier project. Efficiently handle and process your images without the hassle of manual editing.
 
-## Directory Structure
-
-Your directory after setup should resemble the following structure:
-
-\```
-Drinks_Classifier/
-│
-├── data_annotation.py
-├── gather_data.py
-├── print.py
-├── data_augmentation.py
-├── image_cropper
-├── Utility commands.txt
-├── data_pipeline.py
-├── image_cropper.cpp
-├── draw_rectangles.py
-│
-└── Images/
-    ├── carlsberg_beer_images
-    ├── heineken_beer_images
-    ├── red_bull_energy_drink_images
-    ├── coca_cola_images
-    ├── pepsi_images
-    └── tiger_beer_images
-\```
-
 ## 🚀 Usage
 
 Navigate to the main directory:
