@@ -1,54 +1,71 @@
-﻿I would like to create a python script  in which, if I run my code via the following terminal commands I want to see the shortcut information for the following options only once so that I can focus on looking at which image has been cropped and saved: 
+# Drinks Classifier Image Cropper
 
+A utility for cropping and managing images for the Drinks Classifier project. Efficiently handle and process your images without the hassle of manual editing.
 
-No I want 4 options:
+## Directory Structure
 
+Your directory after setup should resemble the following structure:
 
-I need a mechanism that will allow me to delete a currently selected image.
+\```
+Drinks_Classifier/
+│
+├── data_annotation.py
+├── gather_data.py
+├── print.py
+├── data_augmentation.py
+├── image_cropper
+├── Utility commands.txt
+├── data_pipeline.py
+├── image_cropper.cpp
+├── draw_rectangles.py
+│
+└── Images/
+    ├── carlsberg_beer_images
+    ├── heineken_beer_images
+    ├── red_bull_energy_drink_images
+    ├── coca_cola_images
+    ├── pepsi_images
+    └── tiger_beer_images
+\```
 
+## 🚀 Usage
 
-One to delete the current image.                                         “d” key
+Navigate to the main directory:
 
+\```bash
+cd ~/Desktop/Drinks_Classifier
+\```
 
-I need a mechanism that will allow me to draw a rectangle as if I am using a paint application on windows so that I can crop the images.
+Start the cropper:
 
+\```bash
+python your_script_name.py
+\```
 
-One to save the current image.                                            “s” key
+### 🎨 Key Shortcuts:
 
+- **d**: Delete the current image.
+- **s**: Save the cropped version of the current image.
+- **i**: Ignore the current image and move to the next.
+- **q**: Gracefully quit the program.
 
-I need a mechanism to currently ignore the selected image.
+> 📌 **Note**: The utility smartly remembers the images you've ignored or deleted. So, the next time you run it, you won't revisit them.
 
+### 📢 Outputs
 
-One to skip the current image to do nothing but simply ignore.             “i” key
+Your terminal will keep you informed:
 
+- 📥 `Image saved at [path/to/image]`
+- 🚫 `Image ignored.`
+- 🗑️ `Image deleted from [path/to/image]`
 
-I need a way to exit a program gracefully.
+A detailed log is maintained for every action, making sure you're always informed of past operations.
 
+## ⚠️ Important Points
 
-One to do nothing and quit the program.                                   “q” key
+1. 🔄 Cropped images directly overwrite the originals. Always backup if you need the raw files.
+2. 📜 Every session appends to the log file, providing a cumulative history.
 
+## Contribution
 
-All of these options must be done gracefully, without errors and bugs. I must have a log of all the activities that append from the existing text file.
-
-
-It is practically impossible for me to crop thousands if not hundreds of images in one go. Therefore I will need to run the program again and again. The next time when I run the program it should be able to skip the images that I have ignored (some images are perfect as they don't need to be cropped), it should also skip the images that I have been skipped and ignored. I should also have another option to ignore. 
-
-
-I want the terminal to print as an output for every image that is successfully saved, successfully skipped, successfully deleted. The log files should also write where in the images that it has processed. Remember there are multiple folders for different drink brands.
- 
-This is how my images are stored:
-
-
-htootayzaaung@MSI:~/Desktop/Drinks_Classifier$ ls <br>
- data_annotation.py         gather_data.py          print.py <br>
- data_augmentation.py   image_cropper          'Utility commands.txt' <br>
- data_pipeline.py           image_cropper.cpp <br>
- draw_rectangles.py         Images <br>
-htootayzaaung@MSI:~/Desktop/Drinks_Classifier$ cd Images/ <br>
-htootayzaaung@MSI:~/Desktop/Drinks_Classifier/Images$ ls <br>
-carlsberg_beer_images  heineken_beer_images  red_bull_energy_drink_images <br>
-coca_cola_images           pepsi_images              tiger_beer_images <br>
-htootayzaaung@MSI:~/Desktop/Drinks_Classifier/Images$ <br>
-
-
-The images read needs to be overwritten in the same location with the images that were read without creating new folders to save cropped images.
+Feel free to contribute, report bugs, or suggest features. Every bit of help is appreciated!
